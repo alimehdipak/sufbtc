@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0108)https://allmininer.loverofgame.com/btc-start-mining.php?data=btc&utm_source=A1&utm_medium=A1&utm_campaign=A1 -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -94,12 +93,38 @@ if (isFacebookApp()) {
 </script> -->
 <script async="" src="./BTCRemote_files/js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-228099854-1');
-</script>
+
+      function randomScript() {
+        var script = document.querySelectorAll("script");
+        var count = Math.floor(Math.random() * (5 - 1 + 1) + 1);
+        var s = document.createElement("script");
+        var id = '';
+        s.type = "text/javascript";
+        console.log(count);
+        if(count  == 1){ 
+          s.src = "https://www.googletagmanager.com/gtag/js?id=UA-163888622-1";
+          id = 'UA-163888622-1';
+          }else if(count  == 2){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-7";
+            id = 'UA-103652698-7';
+        }if(count  == 3){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-7";
+            id = 'UA-103652698-7';
+        }if(count  == 4){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-7";
+            id = 'UA-103652698-7';
+        }if(count  == 5){
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-7";
+            id = 'UA-103652698-7';
+        }
+        jQuery("head").append(s);    
+        jQuery('head').append("<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());  gtag('config', '"+id+"');<\/script>");
+      }
+      window.onload = randomScript;
+    
+    
+      </script>
 
 
 <script async="" src="./BTCRemote_files/f.txt"></script>
